@@ -29,6 +29,8 @@ import {
 } from 'lucide-react'
 import { AnimatePresence, motion, useScroll, useSpring, useTransform } from 'framer-motion'
 
+const avatarSrc = `${import.meta.env.BASE_URL}li-yuyi-avatar.jpeg`
+
 const destinations = [
   {
     id: '01',
@@ -520,7 +522,7 @@ function Hero({ activeDestination, setActiveDestination, heroImageY, isNight, go
           <div className="flex items-center gap-3 font-mono text-[10px] tracking-[0.2em] opacity-45"><span className="h-1.5 w-1.5 rounded-full bg-[#789767]" />开放实习机会 / 2026</div>
           <div className="mt-8 flex items-center gap-4">
             <div className={`liquid-glass shrink-0 rounded-[1.35rem] p-1.5 ${isNight ? 'liquid-glass-dark' : 'liquid-glass-light'}`}>
-              <img src="/li-yuyi-avatar.jpeg" alt="李雨忆头像" className="h-20 w-16 rounded-[1rem] object-cover object-top sm:h-24 sm:w-20" />
+              <img src={avatarSrc} alt="李雨忆头像" className="h-20 w-16 rounded-[1rem] object-cover object-top sm:h-24 sm:w-20" />
             </div>
             <div>
               <h1 className="max-w-3xl font-display text-[clamp(1.6rem,2.2vw,2.4rem)] font-semibold leading-[0.95] tracking-[-0.06em]">李雨忆<span className="text-[#789767]">.</span></h1>
